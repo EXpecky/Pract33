@@ -1,0 +1,46 @@
+@startuml
+class MoneyStruct
+class DateStruct
+
+MoneyStruct o-- DateStruct
+
+MoneyStruct : string name1;
+MoneyStruct : string name2;
+MoneyStruct : float kurs = 0.0;
+MoneyStruct : DateStruct date;
+
+
+MoneyStruct : string get_name1();
+MoneyStruct : string get_name2();
+MoneyStruct : float get_kurs();
+MoneyStruct : DateStruct& get_Date();
+MoneyStruct : void set_date(DateStruct Date);
+MoneyStruct : void setName1(std::string n1);
+MoneyStruct : void setName2(std::string n2);
+MoneyStruct : void setKurs(float k);
+MoneyStruct : void createMoneyFromFile(istream& file);
+MoneyStruct : void printMoney(ostream& out);
+MoneyStruct : void printVector(std::vector<MoneyStruct>& money, ostream& ost);
+MoneyStruct : void moneyData(std::istream& file, std::vector<MoneyStruct>& money);
+MoneyStruct : void correctKurs(int kurs);
+MoneyStruct : void correctName(string name);
+
+
+DateStruct : int day = 0;
+DateStruct : int month = 0;
+DateStruct : int year = 0;
+
+DateStruct : void createDateFromFile(istream& file);
+DateStruct : void printDate(ostream& out);
+DateStruct : void correctDate(int d, int m, int y);
+DateStruct : bool isLeapYear(int year);
+DateStruct : void readDate(std::string &date);
+DateStruct : void setDay(int day);
+DateStruct : void setMonth(int month);
+DateStruct : void setYear(int year);
+DateStruct : int getDay();
+DateStruct : int getMonth();
+DateStruct : int getYear();
+
+
+@enduml
