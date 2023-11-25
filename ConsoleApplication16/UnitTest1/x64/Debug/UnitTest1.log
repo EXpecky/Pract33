@@ -1,0 +1,12 @@
+﻿  UnitTest1.cpp
+C:\Users\Леонид\source\repos\ConsoleApplication16\UnitTest1\UnitTest1.cpp(24,37): warning C4101: message: неиспользованная локальная переменная
+C:\Users\Леонид\source\repos\ConsoleApplication16\UnitTest1\UnitTest1.cpp(39,37): warning C4101: message: неиспользованная локальная переменная
+C:\Users\Леонид\source\repos\ConsoleApplication16\UnitTest1\UnitTest1.cpp(85,18): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\Users\Леонид\source\repos\ConsoleApplication16\UnitTest1\UnitTest1.cpp(99,1): warning C4305: аргумент: усечение из "double" в "float"
+C:\Users\Леонид\source\repos\ConsoleApplication16\UnitTest1\UnitTest1.cpp(118,1): warning C4305: аргумент: усечение из "double" в "float"
+C:\Users\Леонид\source\repos\ConsoleApplication16\UnitTest1\UnitTest1.cpp(206,37): warning C4101: Message: неиспользованная локальная переменная
+C:\Users\Леонид\source\repos\ConsoleApplication16\UnitTest1\UnitTest1.cpp(218,37): warning C4101: Message: неиспользованная локальная переменная
+C:\Users\Леонид\source\repos\ConsoleApplication16\UnitTest1\UnitTest1.cpp(230,37): warning C4101: Message: неиспользованная локальная переменная
+C:\Users\Леонид\source\repos\ConsoleApplication16\UnitTest1\UnitTest1.cpp(241,1): warning C4305: аргумент: усечение из "double" в "float"
+C:\Users\Леонид\source\repos\ConsoleApplication16\UnitTest1\UnitTest1.cpp(263,37): warning C4101: message: неиспользованная локальная переменная
+  UnitTest1.vcxproj -> C:\Users\Леонид\source\repos\ConsoleApplication16\x64\Debug\UnitTest1.dll
