@@ -1,4 +1,4 @@
-﻿#include "moneyStruct.h"
+#include "moneyStruct.h"
 #include "pch.h"
 #include <iomanip>
 #include<vector>
@@ -57,19 +57,23 @@ float MoneyStruct::get_kurs()
 
 
 void MoneyStruct::setName1(std::string name) {
+	correctName(name);
 	name1 = name;
 }
 
 void MoneyStruct::setName2(std::string name) {
+	correctName(name);
 	name2 = name;
 }
 
 void MoneyStruct::setKurs(float k) {
+	correctKurs(k);
 	kurs = k;
 }
 
 void MoneyStruct::set_date(DateStruct Date)
 {
+	date.correctDate(Date.getDay(), Date.getMonth(), Date.getYear());
 	date = Date;
 }
 
@@ -78,7 +82,6 @@ DateStruct& MoneyStruct::get_Date() {
 }
 void MoneyStruct::printVector(std::vector<MoneyStruct>& money, std::ostream& ost)
 {
-	//date.printDate(std::cout);
 	for (rsize_t i = 0; i < money.size(); i++)
 	{
 		money.at(i).date.printDate(ost);
